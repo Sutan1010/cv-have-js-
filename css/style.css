@@ -1,0 +1,419 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  line-height: 1.6;
+  font-family: sans-serif;
+  /* width: 1400px; */
+  margin: 0 auto;
+  position: relative;
+}
+i {
+  color: blue;
+}
+a {
+  text-decoration: none;
+}
+.text-img {
+  color: black;
+}
+.text {
+  position: absolute;
+  right: 43%;
+  top: 3.5%;
+  line-height: 20px;
+  vertical-align: text-top;
+  display: inline-block;
+}
+.text h1 {
+  font-size: 24px;
+}
+.text p {
+  display: block;
+  font-size: 12px;
+  padding-left: 50px;
+}
+.picture img {
+  width: 100%;
+  height: 10%;
+}
+/* NAVBAR */
+.navbar {
+  text-align: center;
+}
+.navbar.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+  border: 2px solid #a9a9a9;
+  display: inline-flex;
+}
+.name {
+  /* display: inline-flex; */
+  padding: 0 120px;
+  border: 2px solid #a9a9a9;
+  height: 65px;
+}
+.icon a {
+  text-transform: uppercase;
+  /* font-size: 14px; */
+  color: black;
+  text-decoration: none;
+}
+.name h2 {
+  display: block;
+  padding-bottom: 0;
+  font-size: 25px;
+}
+.name span {
+  color: #a9a9a9;
+  font-size: 12px;
+  margin-right: 12px;
+}
+.navbar-img {
+  border-radius: 50%;
+  width: 27%;
+  position: absolute;
+  border: 15px white solid;
+  /* top: 500px; */
+  right: 500px;
+}
+/* infomation */
+.hidden {
+  display: none;
+}
+.infomation {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 80px;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.target {
+  margin-top: 0px;
+  padding-left: 50px;
+}
+.info {
+  margin-top: 0px;
+  padding-left: 50px;
+}
+.target h1 {
+  padding-bottom: 24px;
+  font-size: 35px;
+}
+.info h1 {
+  padding-bottom: 24px;
+}
+.target p {
+  font-size: 15px;
+}
+.info ul {
+  list-style: none;
+  font-size: 20px;
+}
+.info-icon {
+  margin: 25px 0px 16px;
+}
+.container-icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* Thông tin nghề Nghiệp */
+
+.job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.job-info .container h1 i {
+  text-align: center;
+}
+.job-info .container ul {
+  list-style: none;
+}
+.job-info .container h1 {
+  font-size: 30px;
+}
+.border {
+  border: 2px solid #6a6a6a;
+}
+.container--item {
+  padding-top: 20px;
+}
+.item {
+  padding-top: 15px;
+}
+/* chỉnh sửa icon */
+.job-info-icon {
+  color: #6a6a6a;
+  font-size: 40px;
+}
+/* chỉnh sửa kinh nghiệm */
+.head-item {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.experience {
+  height: 100%;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 5% 95%;
+  row-gap: 5%;
+}
+.experience span {
+  padding: 2px 12px;
+  background-color: #199cdb;
+  border-radius: 5px;
+  color: #fff;
+}
+/* chỉnh sửa học vấn */
+.learn {
+  height: 100%;
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 5% 95%;
+  row-gap: 5%;
+}
+/* chỉnh sửa hoạt động */
+.activity {
+  height: 100%;
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 5% 95%;
+  row-gap: 5%;
+}
+/* chỉnh sửa sở thích */
+.hobby {
+  height: 100%;
+  height: auto;
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 5% 95%;
+  row-gap: 5%;
+}
+.hobby-item {
+  padding: 24px 16px;
+
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 30% 1fr; /* tai sao khi dat gia tri auto auto thi khoang khong gian bi keo gian? */
+  /* justify-items: center; */
+  column-gap: 2%;
+  row-gap: 35%;
+}
+.hobby-item-icon {
+  font-size: 20px;
+  border: 3px solid green;
+  border-radius: 50%;
+
+  display: flex;
+  width: 48px;
+  height: 48px;
+}
+.hobby-item i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hobby-item p {
+  font-size: 9.7px;
+  /* text-align: center; */
+}
+/* chỉnh sửa ngôn ngữ */
+.language {
+  height: 100%;
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 20% 80%;
+  row-gap: 20%;
+}
+
+/* chỉnh sửa kỹ năng */
+.skill {
+  height: 100%;
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 20% 80%;
+  row-gap: 7%;
+}
+/* chỉnh sửa cấp độ ngôn ngữ và kỹ nằng  */
+.level {
+  display: inline-block;
+  background-color: grey;
+  height: 2px;
+  width: 45px;
+  margin-right: 10px;
+}
+.level-point {
+  background-color: #199cdb;
+}
+/* chứng chỉ và giải thương */
+.certificate {
+  margin-top: 70px;
+}
+.certificate ul {
+  list-style: none;
+}
+.certificate h1 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.certificate li {
+  font-size: 20px;
+}
+.certificate img {
+  width: 240px;
+  height: 150px;
+}
+.certificate .container-certificate {
+  width: 1400px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 60px;
+}
+.certificate-item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.item-1 {
+  border-right: 2px solid #d6c08d;
+  margin-right: 15px;
+}
+.item-3 img {
+  /* margin-top: 70px; */
+  margin-right: 30px;
+}
+.certificate-item-flex {
+  display: flex;
+  border-top: 2px solid #d6c08d;
+  padding-top: 30px;
+}
+/* DỰ ÁN  */
+.project .container-project {
+  height: auto;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.container-project img {
+  width: 450px;
+  height: auto;
+}
+.project-item {
+  display: grid;
+}
+.project-item h1 {
+  font-size: 20px;
+}
+.time-project-1 {
+  padding: 12px 0px 12px 16px;
+  border: 3px solid #f2f2f2;
+  border-bottom: none;
+}
+.time-project-2 {
+  padding: 12px 0px 12px 16px;
+  border: 3px solid #f2f2f2;
+  border-bottom: none;
+}
+.time-project-3 {
+  padding: 12px 0px 12px 16px;
+  border: 3px solid #f2f2f2;
+  border-bottom: none;
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+  padding: 8px 2px 8px 4px;
+}
+table td:first-child {
+  width: 85px;
+}
+table tr {
+  border: 1px solid #f2f2f2;
+  vertical-align: top;
+}
+.title-project-1 {
+  padding-top: 10px;
+}
+.title-project-2 {
+  padding-top: 10px;
+  padding-bottom: 21px;
+}
+.title-project-3 {
+  padding-top: 10px;
+  padding-bottom: 21px;
+}
+.year {
+  display: inline-block;
+  background-color: #199cdb;
+  color: #f2f2f2;
+  padding: 2px 12px;
+  border-radius: 20%;
+}
+table tr:first-child {
+  height: 60px;
+}
+/* FOOTER */
+.container-footer {
+  background-color: rgba(128, 128, 128, 0.314);
+  margin-top: 40px;
+  padding-left: 366px;
+  font-size: 30px;
+  height: 70px;
+  display: flex;
+}
+.footer span {
+  align-self: center;
+  padding-right: 40px;
+}
+/* chỉnh sửa hộp email */
+.input-email {
+  padding: 5px;
+  width: 90%;
+  border-radius: 5px;
+}
+.p-email {
+  margin-top: 5px;
+}
+.button-email {
+  padding: 5px;
+  border-radius: 10%;
+  /* background-color: #199cdb; */
+}
+.hidden {
+  display: none;
+}
+/* chỉnh sửa nut view more và view less */
+.button {
+  display: block;
+  background-color: #199cdb;
+  border-radius: 20px;
+  width: 60%;
+}
+/* chỉnh sủa phần view more view less */
+.experience-item,
+.learn-item,
+.activity-item,
+.hobby-item,
+.language-item,
+.skill-item {
+  display: none;
+}
